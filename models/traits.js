@@ -2,6 +2,7 @@ const { Schema } = require(`mongoose`);
 
 const TraitSchema = new Schema(
   {
+    animalId: { type: String, required: true },
     hasFur: { type: Boolean, required: true },
     hasScales: { type: Boolean, required: true },
     hasBones: { type: Boolean, required: true },
